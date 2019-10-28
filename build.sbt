@@ -7,7 +7,7 @@ Test/sources := Nil
 lazy val collectionContrib = crossProject(JVMPlatform, JSPlatform)
   .withoutSuffixFor(JVMPlatform)
   .crossType(CrossType.Pure)
-  .in(file("."))
+  .in(file("collection-contrib"))
   .settings(ScalaModulePlugin.scalaModuleSettings)
   .jvmSettings(ScalaModulePlugin.scalaModuleSettingsJVM)
   .settings(
